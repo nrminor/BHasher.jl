@@ -11,6 +11,7 @@ using BHasher
 # workflow
 # Constants that will be outsourced to command line arguments
 const manifest_path::String = ""
+const delimiter::String = "\t"
 
 manifest_df = @try read_manifest(manifest_path)
 run_prechecks(manifest_df)

@@ -11,12 +11,12 @@ export read_manifest, run_prechecks, check_all_files
 """
 read the provided md5 manifest
 """
-function read_manifest(manifest_path::String)
+function read_manifest(manifest_path::String, delimiter::String)
     manifest = @pipe CSV.read(
         manifest_path,
         DataFrame;
         header = false,
-        delim = "  ",
+        delim = delimiter,
         stripwhitespace = true,
         stringtype = String,
     ) |> rename(_, [:old_hash, :file])
