@@ -12,9 +12,8 @@ And then, do something like this:
 ```julia
 using Base.Threads: @threads
 using ResultTypes: @try
-using Maybe: @?
 using Pipe: @pipe
-using DataFrames, CSV, MD5, JuliaFormatter, Revise
+using DataFrames, CSV, MD5
 
 using BHasher
 
