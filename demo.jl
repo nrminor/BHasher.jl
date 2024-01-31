@@ -10,7 +10,7 @@ using BHasher
 
 # workflow
 # Constants that will be outsourced to command line arguments
-const manifest_path::String = "sandbox/test_manifest.txt"
+const manifest_path::String = ""
 
 manifest_df = @try read_manifest(manifest_path)
 run_prechecks(manifest_df)
