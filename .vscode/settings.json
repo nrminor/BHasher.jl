@@ -1,0 +1,5 @@
+{
+    "julia.environmentPath": "/Users/nickminor/Library/Mobile Documents/com~apple~CloudDocs/Documents/RESEARCH/nrm_experiments/0045/BHasher.jl",
+    "workbench.colorTheme": "Bluloco Light Italic",
+    "julia-format.args": "--threads 8 --startup-file=no --color=yes --gcthreads 3 --compile=all"
+}
