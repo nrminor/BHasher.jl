@@ -13,7 +13,7 @@ using BHasher
 const manifest_path::String = ""
 const delimiter::String = "\t"
 
-manifest_df = @try read_manifest(manifest_path)
+manifest_df = @try read_manifest(manifest_path, delimiter)
 run_prechecks(manifest_df)
 
 # check files
