@@ -1,4 +1,0 @@
-{
-    "workbench.colorTheme": "Bluloco Light Italic",
-    "julia-format.args": "--threads 8 --startup-file=no --color=yes --gcthreads 3 --compile=all"
-}
