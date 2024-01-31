@@ -1,8 +1,9 @@
 # B-Hasher
 
-Have lots of cores? Run lots of file checksums! Here's an example workflow, which can be run with this repo as the project root directory. First, install the required dependencies:
+Have lots of cores? Run lots of file checksums! Here's an example workflow, which can be run with this repo as the project root directory. First, install the required dependencies, either with `Pkg.activate(".') ; Pkg.instantiate() ` or in the Julia REPL with:
 ```
-Pkg.activate(".")
+] activate "."
+] instantiate
 ```
 
 Make sure you've started Julia with available threads, either using `julia --threads auto` or by changing the `JULIA_NUM_THREADS` environment variable.

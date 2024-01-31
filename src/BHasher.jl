@@ -66,7 +66,7 @@ end
 
 """
 """
-function generate_hash(file::T) where {T<:String}
+function generate_hash(file::T) where {T <: String}
     hash = open(MD5.md5, file) |> bytes2hex
     return hash
 end
@@ -83,6 +83,7 @@ function check_all_files(manifest_df::DataFrame)
         @inbounds file = manifest_df[i, 2]
         hash = @try generate_hash(file)
         @inbounds new_hashes[i] = hash
+        println("Finished generating new hash for file $file")
     end
     manifest_df.new_hash = new_hashes
 
